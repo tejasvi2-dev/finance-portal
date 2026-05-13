@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about GST, Tax Filing, Government Schemes, and Financial Services.">
+  <title>FAQ | Finance Department of India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/upgrade.css">
+  <link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-spinner"></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-chevron-up"></i></button>
+  <div id="navbar-placeholder"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">FAQ</li></ol></nav>
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers to common questions about finance, taxation, and government schemes</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <!-- Search -->
+      <div class="faq-search reveal">
+        <input type="text" class="form-control" id="faqSearch" placeholder="Search frequently asked questions...">
+      </div>
+
+      <!-- Category Tabs -->
+      <ul class="nav nav-pills faq-tabs justify-content-center mb-5 reveal" id="faqTabs">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#faqAll">All</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#faqGST">GST</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#faqTax">Tax Filing</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#faqSchemes">Schemes</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#faqSupport">Support</a></li>
+      </ul>
+
+      <div class="row justify-content-center"><div class="col-lg-8">
+        <div class="tab-content" id="faqContent">
+          <div class="tab-pane fade show active" id="faqAll">
+            <!-- GST -->
+            <h5 class="text-gold mb-3 mt-4"><i class="bi bi-receipt me-2"></i>GST</h5>
+            <div class="faq-item active reveal" data-cat="gst"><div class="faq-question"><span>What is GST and who needs to register?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>GST (Goods and Services Tax) is an indirect tax on supply of goods and services. Businesses with annual turnover exceeding ₹40 lakhs (₹20 lakhs for services) must register for GST.</p></div></div>
+            <div class="faq-item reveal" data-cat="gst"><div class="faq-question"><span>How do I file GST returns?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Log in to the GST portal (gst.gov.in), navigate to Returns → File Returns, select the return type (GSTR-1, GSTR-3B, etc.), fill in details, and submit. You can also use our Tax Services portal for assistance.</p></div></div>
+            <div class="faq-item reveal" data-cat="gst"><div class="faq-question"><span>What are the GST tax slabs?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>GST has four main slabs: 5%, 12%, 18%, and 28%. Essential items like food grains are at 0%. Gold is at 3%. Luxury and sin goods attract additional cess above 28%.</p></div></div>
+
+            <!-- Tax Filing -->
+            <h5 class="text-gold mb-3 mt-5"><i class="bi bi-percent me-2"></i>Tax Filing</h5>
+            <div class="faq-item reveal" data-cat="tax"><div class="faq-question"><span>How can I file my Income Tax Return online?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Visit incometax.gov.in, log in with your PAN, select the appropriate ITR form, fill in income details, verify deductions, and submit. E-verify using Aadhaar OTP or net banking.</p></div></div>
+            <div class="faq-item reveal" data-cat="tax"><div class="faq-question"><span>What is the deadline for filing ITR?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>The deadline for individual taxpayers is July 31 of each assessment year. For FY 2025-26, it has been extended to August 31, 2026. Late filing attracts a penalty of up to ₹5,000.</p></div></div>
+            <div class="faq-item reveal" data-cat="tax"><div class="faq-question"><span>Which ITR form should I use?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>ITR-1 for salaried individuals (income up to ₹50 lakhs), ITR-2 for individuals with capital gains, ITR-3 for business income, ITR-4 for presumptive taxation scheme. Check the Income Tax website for detailed eligibility.</p></div></div>
+
+            <!-- Schemes -->
+            <h5 class="text-gold mb-3 mt-5"><i class="bi bi-rocket-takeoff me-2"></i>Government Schemes</h5>
+            <div class="faq-item reveal" data-cat="schemes"><div class="faq-question"><span>How to apply for government financial schemes?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Visit our <a href="schemes.html" class="text-gold">Schemes page</a>, select the relevant scheme, check eligibility, and click "Apply Now" to fill the online application form.</p></div></div>
+            <div class="faq-item reveal" data-cat="schemes"><div class="faq-question"><span>Am I eligible for MUDRA Yojana?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>MUDRA loans are available for micro/small businesses, artisans, street vendors, and individual entrepreneurs. Loans up to ₹10 Lakh are provided without collateral under three categories: Shishu (up to ₹50K), Kishore (₹50K–5L), and Tarun (₹5L–10L).</p></div></div>
+            <div class="faq-item reveal" data-cat="schemes"><div class="faq-question"><span>How does PM Kisan Samman Nidhi work?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Eligible farmer families receive ₹6,000 per year in three equal installments of ₹2,000 each, directly transferred to their bank accounts. Register through PM-Kisan portal or your nearest Common Service Center.</p></div></div>
+
+            <!-- Support -->
+            <h5 class="text-gold mb-3 mt-5"><i class="bi bi-headset me-2"></i>Citizen Support</h5>
+            <div class="faq-item reveal" data-cat="support"><div class="faq-question"><span>How can I contact the Finance Ministry?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Call our toll-free helpline: 1800-180-1961 (Mon-Fri, 9:30 AM – 5:30 PM). Email: helpdesk@finmin.gov.in. Visit us at North Block, Central Secretariat, New Delhi — 110001.</p></div></div>
+            <div class="faq-item reveal" data-cat="support"><div class="faq-question"><span>Where can I download budget documents?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>All budget documents, economic surveys, and annual reports are available in our <a href="reports.html" class="text-gold">Reports & Downloads</a> section in PDF format for free.</p></div></div>
+            <div class="faq-item reveal" data-cat="support"><div class="faq-question"><span>How do I track my scheme application?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Log in to the <a href="login.html" class="text-gold">Citizen Portal</a> using your registered credentials. Navigate to "My Applications" to track status, view updates, and download receipts.</p></div></div>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- CTA -->
+      <div class="text-center mt-5 reveal">
+        <p class="text-muted">Can't find what you're looking for?</p>
+        <a href="contact.html" class="btn btn-primary-custom"><i class="bi bi-telephone me-2"></i>Contact Support</a>
+        <a href="apply.html" class="btn btn-gold ms-2"><i class="bi bi-pencil-square me-2"></i>Apply for Scheme</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/upgrade.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    $(document).ready(function(){
+      // FAQ search
+      $('#faqSearch').on('input',function(){
+        var q=$(this).val().toLowerCase();
+        $('.faq-item').each(function(){
+          var text=$(this).text().toLowerCase();
+          $(this).toggle(text.indexOf(q)!==-1);
+        });
+        // Show all tab when searching
+        if(q.length>0)$('#faqTabs .nav-link:first').tab('show');
+      });
+      // Tab filtering
+      $('#faqTabs .nav-link').on('click',function(){
+        var target=$(this).attr('href');
+        if(target==='#faqAll'){$('.faq-item').show();return;}
+        var cat=target.replace('#faq','').toLowerCase();
+        $('.faq-item').each(function(){$(this).toggle($(this).data('cat')===cat);});
+      });
+    });
+  </script>
+</body>
+</html>

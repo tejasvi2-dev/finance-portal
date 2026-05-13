@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for Government Financial Schemes - Online application portal for Startup India, MSME, MUDRA and more.">
+  <title>Apply for Schemes | Finance Department of India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/upgrade.css">
+  <link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-spinner"></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-chevron-up"></i></button>
+  <div id="navbar-placeholder"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Apply</li></ol></nav>
+      <h1>Apply for Government Schemes</h1>
+      <p>Complete the application form to apply for financial assistance programs</p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="apply-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Progress Steps -->
+          <div class="step-progress">
+            <div class="step-item"><div class="step-circle active" id="stepCircle1">1<span class="step-label">Personal</span></div></div>
+            <div class="step-line" id="stepLine1"></div>
+            <div class="step-item"><div class="step-circle" id="stepCircle2">2<span class="step-label">Scheme</span></div></div>
+            <div class="step-line" id="stepLine2"></div>
+            <div class="step-item"><div class="step-circle" id="stepCircle3">3<span class="step-label">Documents</span></div></div>
+          </div>
+
+          <div class="form-card">
+            <form id="applyForm">
+              <!-- Step 1: Personal Info -->
+              <div class="form-step active" id="step1">
+                <h3><i class="bi bi-person-vcard me-2 text-gold"></i>Personal Information</h3>
+                <div class="row g-3">
+                  <div class="col-md-6"><label class="form-label">Full Name *</label><input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required></div>
+                  <div class="col-md-6"><label class="form-label">Email Address *</label><input type="email" class="form-control" id="email" placeholder="your@email.com" required></div>
+                  <div class="col-md-6"><label class="form-label">Phone Number *</label><input type="tel" class="form-control" id="phone" placeholder="10-digit mobile number" required></div>
+                  <div class="col-md-6"><label class="form-label">Aadhaar Number *</label><input type="text" class="form-control" id="aadhaar" placeholder="XXXX-XXXX-XXXX" required maxlength="14"></div>
+                  <div class="col-md-6">
+                    <label class="form-label">State *</label>
+                    <select class="form-select" id="state" required>
+                      <option value="" disabled selected>Select State</option>
+                      <option>Andhra Pradesh</option><option>Bihar</option><option>Delhi</option><option>Gujarat</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Punjab</option><option>Rajasthan</option><option>Tamil Nadu</option><option>Telangana</option><option>Uttar Pradesh</option><option>West Bengal</option><option>Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Income Range *</label>
+                    <select class="form-select" id="income" required>
+                      <option value="" disabled selected>Select Range</option>
+                      <option>Below ₹2.5 Lakh</option><option>₹2.5 - 5 Lakh</option><option>₹5 - 10 Lakh</option><option>₹10 - 25 Lakh</option><option>Above ₹25 Lakh</option>
+                    </select>
+                  </div>
+                  <div class="col-12"><label class="form-label">Address *</label><textarea class="form-control" id="address" rows="3" placeholder="Enter your full address" required></textarea></div>
+                  <div class="col-12 text-end mt-3">
+                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(2)">Next Step <i class="bi bi-arrow-right ms-2"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2: Scheme Selection -->
+              <div class="form-step" id="step2">
+                <h3><i class="bi bi-clipboard2-check me-2 text-gold"></i>Scheme Selection</h3>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label">Select Scheme *</label>
+                    <select class="form-select" id="schemeSelect" required>
+                      <option value="" disabled selected>Choose a scheme</option>
+                      <option value="startup-india">Startup India</option>
+                      <option value="msme-support">MSME Support Fund</option>
+                      <option value="women-entrepreneurship">Women Entrepreneurship</option>
+                      <option value="pmay">Pradhan Mantri Awas Yojana</option>
+                      <option value="jan-dhan">Jan Dhan Yojana</option>
+                      <option value="kisan-samman">Kisan Samman Nidhi</option>
+                      <option value="mudra-yojana">MUDRA Yojana</option>
+                      <option value="atal-pension">Atal Pension Yojana</option>
+                    </select>
+                  </div>
+                  <div class="col-12"><label class="form-label">Reason for Application</label><textarea class="form-control" rows="4" placeholder="Briefly explain why you are applying for this scheme..."></textarea></div>
+                  <div class="col-12 d-flex justify-content-between mt-3">
+                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(1)"><i class="bi bi-arrow-left me-2"></i>Previous</button>
+                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(3)">Next Step <i class="bi bi-arrow-right ms-2"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Documents -->
+              <div class="form-step" id="step3">
+                <h3><i class="bi bi-cloud-arrow-up me-2 text-gold"></i>Upload Documents</h3>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label">Upload Supporting Document</label>
+                    <div class="upload-zone" id="uploadZone">
+                      <i class="bi bi-cloud-arrow-up"></i>
+                      <p class="mb-1 fw-600">Drag & drop files here or click to browse</p>
+                      <small class="text-muted">PDF, JPG, PNG — Max 5MB</small>
+                      <input type="file" id="fileInput" style="display:none;" accept=".pdf,.jpg,.jpeg,.png">
+                      <div id="fileName" class="mt-2 text-gold fw-600" style="display:none;"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                      <label class="form-check-label" for="agreeTerms">I declare that all information provided is true and accurate. I agree to the <a href="faq.html" class="text-gold">Terms & Conditions</a>.</label>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-between mt-3">
+                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(2)"><i class="bi bi-arrow-left me-2"></i>Previous</button>
+                    <button type="submit" class="btn btn-primary-custom"><i class="bi bi-send me-2"></i>Submit Application</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="applySuccessModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:20px;border:none;">
+        <div class="modal-body success-modal-body">
+          <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+          <h4>Application Submitted Successfully!</h4>
+          <p class="text-muted">Your application has been received. Reference ID: <strong class="text-gold">FIN-2026-<span id="refId"></span></strong></p>
+          <p class="text-muted small">You will receive a confirmation email shortly. Track your application status through the Citizen Portal.</p>
+          <div class="d-flex gap-2 justify-content-center mt-3">
+            <a href="index.html" class="btn btn-primary-custom"><i class="bi bi-house me-2"></i>Homepage</a>
+            <a href="schemes.html" class="btn btn-gold"><i class="bi bi-grid me-2"></i>View Schemes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/upgrade.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    // Pre-fill scheme from URL
+    $(document).ready(function(){
+      var params=new URLSearchParams(window.location.search);
+      if(params.get('scheme')){
+        $('#schemeSelect').val(params.get('scheme'));
+      }
+    });
+
+    // Multi-step form logic
+    function nextStep(s){
+      var valid=true;
+      var $current=$('.form-step.active');
+      $current.find('[required]').each(function(){
+        if(!$(this).val()||!$(this).val().trim()){$(this).addClass('is-invalid');valid=false;}
+        else{$(this).removeClass('is-invalid');}
+      });
+      // Custom validation
+      if(s===2){
+        var ph=$('#phone').val();if(ph&&!/^\d{10}$/.test(ph.replace(/\D/g,''))){$('#phone').addClass('is-invalid');valid=false;}
+        var aa=$('#aadhaar').val();if(aa&&aa.replace(/\D/g,'').length!==12){$('#aadhaar').addClass('is-invalid');valid=false;}
+      }
+      if(!valid)return;
+      $('.form-step').removeClass('active');
+      $('#step'+s).addClass('active');
+      for(var i=1;i<=3;i++){
+        var $c=$('#stepCircle'+i),$l=$('#stepLine'+(i-1));
+        if(i<s){$c.removeClass('active').addClass('done');if($l)$l.addClass('active');}
+        else if(i===s){$c.addClass('active').removeClass('done');if($l)$l.addClass('active');}
+        else{$c.removeClass('active done');if($l)$l.removeClass('active');}
+      }
+    }
+    function prevStep(s){
+      $('.form-step').removeClass('active');
+      $('#step'+s).addClass('active');
+      for(var i=1;i<=3;i++){
+        var $c=$('#stepCircle'+i),$l=$('#stepLine'+(i-1));
+        if(i<s){$c.removeClass('active').addClass('done');if($l)$l.addClass('active');}
+        else if(i===s){$c.addClass('active').removeClass('done');}
+        else{$c.removeClass('active done');if($l)$l.removeClass('active');}
+      }
+    }
+
+    // File upload
+    $('#uploadZone').on('click',function(){$('#fileInput').click();});
+    $('#fileInput').on('change',function(){
+      if(this.files.length){$('#fileName').text(this.files[0].name).show();}
+    });
+
+    // Aadhaar auto-format
+    $('#aadhaar').on('input',function(){
+      var v=$(this).val().replace(/\D/g,'').substring(0,12);
+      var f=v.replace(/(\d{4})(?=\d)/g,'$1-');
+      $(this).val(f);
+    });
+
+    // Form submit
+    $('#applyForm').on('submit',function(e){
+      e.preventDefault();
+      if(!$('#agreeTerms').is(':checked')){alert('Please agree to the terms.');return;}
+      var $btn=$(this).find('button[type="submit"]');
+      $btn.html('<span class="spinner-border spinner-border-sm me-2"></span>Submitting...').prop('disabled',true);
+      setTimeout(function(){
+        $('#refId').text(Math.floor(100000+Math.random()*900000));
+        new bootstrap.Modal('#applySuccessModal').show();
+        $btn.html('<i class="bi bi-check-circle me-2"></i>Submitted!');
+      },2000);
+    });
+  </script>
+</body>
+</html>

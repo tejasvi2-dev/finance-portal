@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finance Department of India - Empowering India's Financial Future. Access budget data, government schemes, tax services, and financial analytics.">
+  <title>Finance Department of India | Official Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/upgrade.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-spinner"></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-chevron-up"></i></button>
+
+  <!-- ======== NAVBAR (injected by components.js) ======== -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="particles"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="hero-badge reveal"><i class="bi bi-circle-fill"></i> Government of India — Ministry of Finance</div>
+          <h1 class="reveal">Empowering India's<br><span class="text-gradient" id="typed-text">Financial Future</span><span class="typed-cursor">|</span></h1>
+          <p class="reveal">Driving inclusive economic growth through transparent governance, innovative fiscal policies, and citizen-centric financial services for 1.4 billion people.</p>
+          <div class="hero-buttons reveal">
+            <a href="budget.html" class="btn btn-primary-custom"><i class="bi bi-bar-chart-line me-2"></i>Explore Budget</a>
+            <a href="services.html" class="btn btn-outline-custom"><i class="bi bi-people me-2"></i>Citizen Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      Scroll Down<i class="bi bi-chevron-double-down"></i>
+    </div>
+  </section>
+
+  <!-- ======== TICKER ======== -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item"><i class="bi bi-megaphone-fill"></i> Union Budget 2026-27 Released — Key Highlights Available</span>
+      <span class="ticker-item"><i class="bi bi-lightning-fill"></i> GST Collection Exceeds ₹2.1 Lakh Crore in April 2026</span>
+      <span class="ticker-item"><i class="bi bi-graph-up-arrow"></i> India's GDP Growth at 7.2% — Fastest Among Major Economies</span>
+      <span class="ticker-item"><i class="bi bi-shield-check"></i> New Tax Filing Deadline Extended to August 31, 2026</span>
+      <span class="ticker-item"><i class="bi bi-rocket-takeoff-fill"></i> Startup India: 1,20,000+ Recognized Startups and Growing</span>
+      <span class="ticker-item"><i class="bi bi-bank"></i> Digital India Financial Inclusion Program — 50Cr+ Beneficiaries</span>
+    </div>
+  </div>
+
+  <!-- ======== LIVE DASHBOARD ======== -->
+  <section class="section section-dark" id="dashboard">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Live Dashboard</span>
+        <h2>India's Financial Overview</h2>
+        <p>Real-time indicators reflecting the strength and progress of India's economy</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-wallet2"></i></div>
+            <h3>₹<span class="counter" data-target="4813000" data-suffix=" Cr">0</span></h3>
+            <p>Annual Budget 2026-27</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card">
+            <div class="stat-icon" style="background:rgba(37,99,235,0.15);color:#2563eb;"><i class="bi bi-cash-stack"></i></div>
+            <h3>₹<span class="counter" data-target="3520000" data-suffix=" Cr">0</span></h3>
+            <p>Tax Revenue Collected</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card">
+            <div class="stat-icon" style="background:rgba(16,185,129,0.15);color:#10b981;"><i class="bi bi-people-fill"></i></div>
+            <h3><span class="counter" data-target="82" data-suffix=" Cr+">0</span></h3>
+            <p>Citizens Benefited</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card">
+            <div class="stat-icon" style="background:rgba(244,160,32,0.15);color:#f4a020;"><i class="bi bi-clipboard2-data-fill"></i></div>
+            <h3><span class="counter" data-target="340" data-suffix="+">0</span></h3>
+            <p>Active Schemes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURED SCHEMES ======== -->
+  <section class="section section-gray" id="schemes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Government Initiatives</span>
+        <h2>Featured Schemes</h2>
+        <p>Transformative programs driving India's economic growth and citizen empowerment</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="scheme-card">
+            <div class="scheme-icon"><i class="bi bi-rocket-takeoff"></i></div>
+            <h4>Startup India</h4>
+            <p>Empowering entrepreneurs with funding, mentorship, and simplified compliance for innovative startups.</p>
+            <a href="scheme-details.html?scheme=startup-india" class="btn btn-gold btn-sm">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="scheme-card">
+            <div class="scheme-icon"><i class="bi bi-building-gear"></i></div>
+            <h4>MSME Support</h4>
+            <p>Financial assistance and credit guarantee programs for micro, small and medium enterprises.</p>
+            <a href="scheme-details.html?scheme=msme-support" class="btn btn-gold btn-sm">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="scheme-card">
+            <div class="scheme-icon"><i class="bi bi-gender-female"></i></div>
+            <h4>Women Entrepreneurship</h4>
+            <p>Dedicated financial programs supporting women-led businesses across India.</p>
+            <a href="scheme-details.html?scheme=women-entrepreneurship" class="btn btn-gold btn-sm">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="scheme-card">
+            <div class="scheme-icon"><i class="bi bi-cpu"></i></div>
+            <h4>Digital India Finance</h4>
+            <p>Driving cashless economy with digital payments, UPI integration, and fintech innovation.</p>
+            <a href="scheme-details.html?scheme=digital-india" class="btn btn-gold btn-sm">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ANALYTICS ======== -->
+  <section class="section section-light" id="analytics">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Financial Analytics</span>
+        <h2>Budget Allocation Overview</h2>
+        <p>Key financial allocations across major sectors of the Indian economy</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-shield-check text-gold me-2"></i>Defence</h5>
+            <div class="amount">₹6,21,540 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="78" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-mortarboard text-gold me-2"></i>Education</h5>
+            <div class="amount">₹1,20,628 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="62" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-heart-pulse text-gold me-2"></i>Healthcare</h5>
+            <div class="amount">₹89,155 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="55" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-train-front text-gold me-2"></i>Infrastructure</h5>
+            <div class="amount">₹11,11,111 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="90" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-tree text-gold me-2"></i>Agriculture</h5>
+            <div class="amount">₹1,25,036 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="65" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-cpu text-gold me-2"></i>Technology</h5>
+            <div class="amount">₹16,549 Cr</div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="35" style="width:0;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== QUICK SERVICES ======== -->
+  <section class="section section-gray" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Quick Access</span>
+        <h2>Citizen Services</h2>
+        <p>Essential financial services at your fingertips</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="tax-services.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-receipt-cutoff"></i><h5>GST Services</h5><p>File & track GST returns</p></div></a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="tax-services.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-percent"></i><h5>Tax Info</h5><p>Income tax guidelines</p></div></a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="reports.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-file-earmark-arrow-down"></i><h5>Reports</h5><p>Download fiscal reports</p></div></a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="apply.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-pencil-square"></i><h5>Apply</h5><p>Apply for schemes</p></div></a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="service-details.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-currency-rupee"></i><h5>Financial Aid</h5><p>Subsidy & loan info</p></div></a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <a href="contact.html" style="text-decoration:none;"><div class="service-card"><i class="bi bi-headset"></i><h5>Support</h5><p>Citizen helpline</p></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWS ======== -->
+  <section class="section section-light" id="news">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Latest Updates</span>
+        <h2>News & Announcements</h2>
+        <p>Stay informed with the latest financial news and policy updates</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="news-card">
+            <div class="news-card-img"><img src="images/hero-bg.png" alt="Budget Highlights"></div>
+            <div class="news-card-body">
+              <div class="date"><i class="bi bi-calendar3 me-1"></i> May 10, 2026</div>
+              <h5>Union Budget 2026-27: Key Highlights and Allocations</h5>
+              <p>The Finance Minister announced record allocations for infrastructure, healthcare, and education sectors...</p>
+              <a href="news-details.html?news=budget-highlights" class="btn btn-gold btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="news-card">
+            <div class="news-card-img"><img src="images/news-2.png" alt="Digital Payments"></div>
+            <div class="news-card-body">
+              <div class="date"><i class="bi bi-calendar3 me-1"></i> May 5, 2026</div>
+              <h5>Digital Payment Transactions Cross 20 Billion Monthly Mark</h5>
+              <p>India's UPI ecosystem continues to set global benchmarks with unprecedented growth in digital transactions...</p>
+              <a href="news-details.html?news=digital-payments" class="btn btn-gold btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="news-card">
+            <div class="news-card-img"><img src="images/startup.png" alt="Economic Summit"></div>
+            <div class="news-card-body">
+              <div class="date"><i class="bi bi-calendar3 me-1"></i> April 28, 2026</div>
+              <h5>G20 Finance Ministers Praise India's Fiscal Discipline</h5>
+              <p>India's prudent fiscal management and digital transformation received accolades at the G20 summit...</p>
+              <a href="news-details.html?news=g20-praise" class="btn btn-gold btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ======== CITIZEN TESTIMONIALS ======== -->
+  <section class="section section-light" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Citizen Voices</span>
+        <h2>What Citizens Say</h2>
+        <p>Real stories from beneficiaries of government financial programs</p>
+      </div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-4 stagger-item">
+          <div class="testimonial-card reveal">
+            <i class="bi bi-quote quote-icon"></i>
+            <p>"Thanks to Startup India, I received tax exemptions and mentorship that helped my AI startup grow from 2 employees to 85 in just 3 years. The government's support was instrumental."</p>
+            <div class="testimonial-author">
+              <img src="images/startup.png" alt="Rajesh Kumar">
+              <div><h6>Rajesh Kumar</h6><small>Founder, TechVista AI — Bengaluru</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 stagger-item">
+          <div class="testimonial-card reveal">
+            <i class="bi bi-quote quote-icon"></i>
+            <p>"MUDRA Yojana gave me a collateral-free loan of ₹8 Lakh to expand my tailoring business. Today I employ 12 women from my village. This scheme changed our lives forever."</p>
+            <div class="testimonial-author">
+              <img src="images/rural-banking.png" alt="Meena Devi">
+              <div><h6>Meena Devi</h6><small>Entrepreneur — Jaipur, Rajasthan</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 stagger-item">
+          <div class="testimonial-card reveal">
+            <i class="bi bi-quote quote-icon"></i>
+            <p>"Jan Dhan Yojana opened my first bank account. Now I receive my pension directly — no middlemen. UPI made it possible to pay even at the local kirana store digitally."</p>
+            <div class="testimonial-author">
+              <img src="images/citizen-services.png" alt="Shankar Rao">
+              <div><h6>Shankar Rao</h6><small>Retired Teacher — Hyderabad</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== UPCOMING EVENTS + DOWNLOADS ======== -->
+  <section class="section section-gray" id="events-downloads">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Events -->
+        <div class="col-lg-6 reveal">
+          <h4 class="mb-4"><i class="bi bi-calendar-event text-gold me-2"></i>Upcoming Events</h4>
+          <div class="event-item">
+            <div class="event-date"><div class="day">15</div><div class="month">Jun</div></div>
+            <div class="event-info"><span class="event-tag">Conference</span><h6>National Finance Summit 2026</h6><p>Vigyan Bhawan, New Delhi — Fiscal policy, green finance & digital economy.</p></div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><div class="day">28</div><div class="month">Jun</div></div>
+            <div class="event-info"><span class="event-tag">Deadline</span><h6>GST Annual Return Filing</h6><p>Last date for GSTR-9 filing for FY 2025-26. E-file on gst.gov.in.</p></div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><div class="day">12</div><div class="month">Jul</div></div>
+            <div class="event-info"><span class="event-tag">Workshop</span><h6>Digital India Fintech Hackathon</h6><p>Open to startups — Build innovative solutions for financial inclusion.</p></div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><div class="day">31</div><div class="month">Aug</div></div>
+            <div class="event-info"><span class="event-tag">Deadline</span><h6>Income Tax Return Filing</h6><p>Extended deadline for individual ITR filing for AY 2026-27.</p></div>
+          </div>
+        </div>
+        <!-- Downloads -->
+        <div class="col-lg-6 reveal">
+          <h4 class="mb-4"><i class="bi bi-download text-gold me-2"></i>Download Center</h4>
+          <div class="d-flex flex-column gap-3">
+            <a href="reports.html" class="download-card text-decoration-none">
+              <div class="dl-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+              <div class="dl-info"><h6>Union Budget 2026-27 — Full Document</h6><small>PDF • 24.5 MB • Released May 2026</small></div>
+              <i class="bi bi-download text-gold"></i>
+            </a>
+            <a href="reports.html" class="download-card text-decoration-none">
+              <div class="dl-icon"><i class="bi bi-file-earmark-bar-graph"></i></div>
+              <div class="dl-info"><h6>Economic Survey 2025-26</h6><small>PDF • 18.2 MB • Annual Review</small></div>
+              <i class="bi bi-download text-gold"></i>
+            </a>
+            <a href="reports.html" class="download-card text-decoration-none">
+              <div class="dl-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <div class="dl-info"><h6>GST Compliance Guide 2026</h6><small>PDF • 5.8 MB • Updated May 2026</small></div>
+              <i class="bi bi-download text-gold"></i>
+            </a>
+            <a href="reports.html" class="download-card text-decoration-none">
+              <div class="dl-icon"><i class="bi bi-file-earmark-ruled"></i></div>
+              <div class="dl-info"><h6>Income Tax Filing Guide FY 2025-26</h6><small>PDF • 3.2 MB • Step-by-step instructions</small></div>
+              <i class="bi bi-download text-gold"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== GALLERY ======== -->
+  <section class="section section-gray" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Photo Gallery</span>
+        <h2>Moments in Governance</h2>
+        <p>Key moments from financial conferences, budget sessions, and citizen programs</p>
+      </div>
+      <div class="row g-3 stagger-container">
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/about.png" alt="Finance Meeting">
+            <div class="gallery-overlay"><span>Finance Ministry Meeting</span></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/startup.png" alt="Startup India">
+            <div class="gallery-overlay"><span>Startup India Summit</span></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/gallery-1.png" alt="Economic Conference">
+            <div class="gallery-overlay"><span>Economic Policy Conference</span></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/digital-india.png" alt="Digital India">
+            <div class="gallery-overlay"><span>Digital India Initiative</span></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/rural-banking.png" alt="Rural Banking">
+            <div class="gallery-overlay"><span>Rural Banking Program</span></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 stagger-item">
+          <div class="gallery-item">
+            <img src="images/tax-office.png" alt="Tax Office">
+            <div class="gallery-overlay"><span>Modern Tax Service Center</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0"><img src="" alt="Gallery" class="w-100 rounded-bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="section section-light" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Get in Touch</span>
+        <h2>Contact Us</h2>
+        <p>We're here to help with your financial queries and concerns</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <form class="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
+              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number"></div>
+              <div class="col-md-6">
+                <select class="form-select form-control" required>
+                  <option value="" selected disabled>Select Department</option>
+                  <option>Income Tax</option>
+                  <option>GST</option>
+                  <option>Budget &amp; Finance</option>
+                  <option>Schemes &amp; Subsidies</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+              <div class="col-12"><input type="text" class="form-control" placeholder="Subject" required></div>
+              <div class="col-12"><textarea class="form-control" rows="5" placeholder="Your Message" required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-primary-custom w-100"><i class="bi bi-send me-2"></i>Send Message</button></div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-card">
+            <h4>Contact Information</h4>
+            <div class="contact-info-item"><i class="bi bi-geo-alt-fill"></i><div><strong>Address</strong><p>North Block, Central Secretariat<br>New Delhi — 110001, India</p></div></div>
+            <div class="contact-info-item"><i class="bi bi-telephone-fill"></i><div><strong>Phone</strong><p>+91-11-2309 2511<br>Toll Free: 1800-180-1961</p></div></div>
+            <div class="contact-info-item"><i class="bi bi-envelope-fill"></i><div><strong>Email</strong><p>info@finmin.nic.in<br>helpdesk@finmin.gov.in</p></div></div>
+            <div class="contact-info-item"><i class="bi bi-clock-fill"></i><div><strong>Working Hours</strong><p>Mon–Fri: 9:30 AM – 5:30 PM<br>Sat–Sun: Closed</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MINISTER MESSAGE ======== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">From the Minister's Desk</span><h2>A Message for the Nation</h2></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-4 reveal"><div class="minister-card"><div class="minister-img"><img src="images/minister.png" alt="Minister of Finance"></div></div></div>
+        <div class="col-lg-8 reveal">
+          <div class="minister-body">
+            <p class="quote">"Our government is committed to building a self-reliant India through prudent fiscal management, digital innovation, and inclusive economic policies. Every rupee of public money shall be spent with accountability and transparency for the welfare of 1.4 billion citizens."</p>
+            <div class="minister-signature">Shri Finance Minister</div>
+            <div class="minister-designation">Minister of Finance, Government of India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DIGITAL INDIA ======== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Digital Transformation</span><h2>Digital India Initiatives</h2><p>Driving India's digital economy forward</p></div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="digi-card tilt-card"><div class="digi-card-top"></div><div class="digi-card-body"><i class="bi bi-phone"></i><h5>Digital Payments</h5><p>UPI, BHIM, and RuPay powering 20B+ monthly transactions across India.</p></div></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="digi-card tilt-card"><div class="digi-card-top" style="background:var(--gradient-accent);"></div><div class="digi-card-body"><i class="bi bi-gear"></i><h5>Smart Governance</h5><p>AI-powered policy analytics and real-time fiscal monitoring dashboards.</p></div></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="digi-card tilt-card"><div class="digi-card-top"></div><div class="digi-card-body"><i class="bi bi-people"></i><h5>Financial Inclusion</h5><p>50Cr+ Jan Dhan accounts bringing banking to every household.</p></div></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="digi-card tilt-card"><div class="digi-card-top" style="background:var(--gradient-accent);"></div><div class="digi-card-body"><i class="bi bi-bank"></i><h5>Rural Banking</h5><p>Payment banks and micro-ATMs reaching 6 lakh+ villages nationwide.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BUDGET CIRCULAR PROGRESS ======== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Allocation Breakdown</span><h2>Interactive Budget Overview</h2></div>
+      <div class="row g-4 text-center stagger-container">
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="78"/></svg><div class="circle-text">78%</div></div>
+          <h6>Defence</h6>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="62" style="stroke:var(--accent-gold);"/></svg><div class="circle-text">62%</div></div>
+          <h6>Education</h6>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="55" style="stroke:#10b981;"/></svg><div class="circle-text">55%</div></div>
+          <h6>Healthcare</h6>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="90"/></svg><div class="circle-text">90%</div></div>
+          <h6>Infra</h6>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="65" style="stroke:var(--accent-gold);"/></svg><div class="circle-text">65%</div></div>
+          <h6>Agriculture</h6>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 stagger-item">
+          <div class="circle-progress"><svg><circle class="circle-track" cx="60" cy="60" r="54"/><circle class="circle-fill" cx="60" cy="60" r="54" data-percent="35" style="stroke:#ef4444;"/></svg><div class="circle-text">35%</div></div>
+          <h6>Technology</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TIMELINE ======== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Milestones</span><h2>Economic Timeline</h2></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content"><div class="year">2024</div><h5>GST Collection Crosses ₹2 Lakh Crore</h5><p>Record monthly GST collection reflecting economic buoyancy.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content"><div class="year">2025</div><h5>Digital India 3.0 Launched</h5><p>Next-gen digital governance platform connecting 750+ districts.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content"><div class="year">2025</div><h5>India Becomes 4th Largest Economy</h5><p>GDP surpasses $4.5 trillion, overtaking Japan.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content"><div class="year">2026</div><h5>Union Budget 2026-27 — ₹48.13 Lakh Cr</h5><p>Largest ever budget with focus on infrastructure and inclusion.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ACHIEVEMENTS ======== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">National Pride</span><h2>Key Achievements</h2></div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="achievement-card"><i class="bi bi-trophy"></i><h3><span class="counter" data-target="4" data-suffix="th">0</span></h3><p>Largest Economy Globally</p></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="achievement-card"><i class="bi bi-graph-up-arrow"></i><h3><span class="counter" data-target="7" data-suffix="%" data-decimals="1">0</span></h3><p>GDP Growth Rate</p></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="achievement-card"><i class="bi bi-phone"></i><h3><span class="counter" data-target="20" data-suffix="B+">0</span></h3><p>Monthly UPI Transactions</p></div></div>
+        <div class="col-lg-3 col-md-6 stagger-item"><div class="achievement-card"><i class="bi bi-rocket-takeoff"></i><h3><span class="counter" data-target="120000" data-suffix="+">0</span></h3><p>Recognized Startups</p></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Citizen Voices</span><h2>What Citizens Say</h2></div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-4 col-md-6 stagger-item"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"The GST portal has completely simplified my business compliance. Filing returns is now effortless."</blockquote><div class="testimonial-avatar"><img src="images/minister.png" alt="User"></div><div class="testimonial-name">Rajesh Kumar</div><div class="testimonial-role">MSME Owner, Delhi</div></div></div>
+        <div class="col-lg-4 col-md-6 stagger-item"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"MUDRA Yojana helped me start my small business. The government's financial support changed my life."</blockquote><div class="testimonial-avatar"><img src="images/minister.png" alt="User"></div><div class="testimonial-name">Priya Sharma</div><div class="testimonial-role">Entrepreneur, Mumbai</div></div></div>
+        <div class="col-lg-4 col-md-6 stagger-item"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div><blockquote>"Digital India initiative has brought banking to our village. UPI payments have made life so much easier."</blockquote><div class="testimonial-avatar"><img src="images/minister.png" alt="User"></div><div class="testimonial-name">Suresh Yadav</div><div class="testimonial-role">Farmer, Rajasthan</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ ======== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Help Center</span><h2>Frequently Asked Questions</h2></div>
+      <div class="row justify-content-center"><div class="col-lg-8">
+        <div class="faq-item active reveal"><div class="faq-question"><span>What is GST and who needs to register?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>GST (Goods and Services Tax) is an indirect tax applicable on supply of goods and services. Businesses with annual turnover exceeding ₹40 lakhs (₹20 lakhs for services) must register.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-question"><span>How can I file my Income Tax Return online?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Visit incometax.gov.in, log in with your PAN, select the appropriate ITR form, fill in your income details, and submit. You can also use our Tax Services portal for guided assistance.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-question"><span>How to apply for government financial schemes?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>Visit our Schemes page, select the relevant scheme, check eligibility criteria, and apply online through the respective portal. Most schemes offer paperless digital applications.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-question"><span>Where can I download budget documents?</span><i class="bi bi-plus-lg"></i></div><div class="faq-answer"><p>All budget documents, economic surveys, and annual reports are available in our Reports & Downloads section in PDF format for free download.</p></div></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ======== DOWNLOADS ======== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Resources</span><h2>Download Center</h2></div>
+      <div class="row g-3 stagger-container">
+        <div class="col-lg-6 stagger-item"><div class="download-card"><div class="download-icon"><i class="bi bi-file-earmark-pdf"></i></div><div><h6>Union Budget 2026-27</h6><p>Complete budget document — 142 pages, PDF</p></div><a href="#" class="btn btn-gold btn-sm"><i class="bi bi-download"></i></a></div></div>
+        <div class="col-lg-6 stagger-item"><div class="download-card"><div class="download-icon"><i class="bi bi-file-earmark-bar-graph"></i></div><div><h6>Economic Survey 2025-26</h6><p>Annual economic analysis — 298 pages, PDF</p></div><a href="#" class="btn btn-gold btn-sm"><i class="bi bi-download"></i></a></div></div>
+        <div class="col-lg-6 stagger-item"><div class="download-card"><div class="download-icon"><i class="bi bi-file-earmark-text"></i></div><div><h6>Tax Filing Guide 2026</h6><p>Step-by-step ITR guide — 48 pages, PDF</p></div><a href="#" class="btn btn-gold btn-sm"><i class="bi bi-download"></i></a></div></div>
+        <div class="col-lg-6 stagger-item"><div class="download-card"><div class="download-icon"><i class="bi bi-file-earmark-ruled"></i></div><div><h6>GST Circular Updates</h6><p>Latest GST notifications — 36 pages, PDF</p></div><a href="#" class="btn btn-gold btn-sm"><i class="bi bi-download"></i></a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <h2 class="text-white mb-3 reveal neon-glow">Stay Updated with India's Financial Journey</h2>
+      <p class="text-white-50 mb-4 reveal">Subscribe to receive budget updates, policy announcements, and financial news directly in your inbox.</p>
+      <div class="newsletter-input-group reveal">
+        <input type="email" placeholder="Enter your email address">
+        <button class="btn btn-primary-custom">Subscribe <i class="bi bi-arrow-right ms-1"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER (injected by components.js) ======== -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/upgrade.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
+

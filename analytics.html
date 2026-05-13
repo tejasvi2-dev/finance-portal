@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Financial Analytics Dashboard - India's economic indicators, budget analysis, and growth metrics.">
+  <title>Analytics | Finance Department of India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/upgrade.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-spinner"></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-chevron-up"></i></button>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="page-header animated-gradient">
+    <div class="container">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Analytics</li></ol></nav>
+      <h1>Financial Analytics</h1>
+      <p>Comprehensive economic indicators and performance metrics</p>
+    </div>
+  </section>
+
+  <!-- Key Indicators -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Economic Indicators</span><h2 style="color:#fff;">Key Performance Metrics</h2></div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card text-center"><div class="stat-icon mx-auto"><i class="bi bi-graph-up-arrow"></i></div><h3><span class="counter" data-target="7" data-suffix="" data-decimals="1">0</span>%</h3><p>GDP Growth Rate</p></div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card text-center"><div class="stat-icon mx-auto" style="background:rgba(37,99,235,0.15);color:#2563eb;"><i class="bi bi-arrow-down-circle"></i></div><h3><span class="counter" data-target="4" data-suffix="" data-decimals="1">0</span>%</h3><p>Inflation Rate (CPI)</p></div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card text-center"><div class="stat-icon mx-auto" style="background:rgba(16,185,129,0.15);color:#10b981;"><i class="bi bi-cash-coin"></i></div><h3>$<span class="counter" data-target="680" data-suffix="">0</span>B</h3><p>Foreign Reserves</p></div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="stat-card text-center"><div class="stat-icon mx-auto" style="background:rgba(244,160,32,0.15);color:#f4a020;"><i class="bi bi-currency-exchange"></i></div><h3><span class="counter" data-target="83" data-suffix="" data-decimals="1">0</span></h3><p>USD/INR Exchange</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector Analytics -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Sector Analysis</span><h2>Budget Allocation by Sector</h2><p>Detailed breakdown of financial allocation across key sectors</p></div>
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-shield-check text-gold me-2"></i>Defence &amp; Security</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹6.21 L Cr</span><span class="badge bg-success">+13%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="78" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-train-front text-gold me-2"></i>Infrastructure &amp; Transport</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹11.11 L Cr</span><span class="badge bg-success">+11%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="92" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-mortarboard text-gold me-2"></i>Education &amp; Skill Development</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹1.20 L Cr</span><span class="badge bg-success">+8%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="62" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-heart-pulse text-gold me-2"></i>Health &amp; Family Welfare</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹89,155 Cr</span><span class="badge bg-success">+12%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="55" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-tree text-gold me-2"></i>Agriculture &amp; Rural Development</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹1.25 L Cr</span><span class="badge bg-success">+9%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="65" style="width:0;"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 stagger-item">
+          <div class="analytics-card">
+            <h5><i class="bi bi-lightning text-gold me-2"></i>Energy &amp; Green Transition</h5>
+            <div class="d-flex justify-content-between align-items-center"><span class="amount">₹68,769 Cr</span><span class="badge bg-warning text-dark">+18%</span></div>
+            <div class="progress-custom"><div class="progress-bar-custom" data-width="48" style="width:0;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Revenue Analysis -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal"><span class="subtitle">Revenue</span><h2>Revenue Collection Trends</h2></div>
+      <div class="reveal table-responsive">
+        <table class="table table-premium">
+          <thead>
+            <tr><th>Revenue Source</th><th>FY 2024-25</th><th>FY 2025-26</th><th>FY 2026-27 (Est.)</th><th>Growth</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Income Tax</td><td>₹10.22 L Cr</td><td>₹11.87 L Cr</td><td>₹13.57 L Cr</td><td class="text-success"><i class="bi bi-arrow-up"></i> 14.3%</td></tr>
+            <tr><td>GST Collection</td><td>₹20.18 L Cr</td><td>₹22.08 L Cr</td><td>₹25.20 L Cr</td><td class="text-success"><i class="bi bi-arrow-up"></i> 14.1%</td></tr>
+            <tr><td>Corporate Tax</td><td>₹9.11 L Cr</td><td>₹10.20 L Cr</td><td>₹11.80 L Cr</td><td class="text-success"><i class="bi bi-arrow-up"></i> 15.7%</td></tr>
+            <tr><td>Customs Duty</td><td>₹2.12 L Cr</td><td>₹2.31 L Cr</td><td>₹2.55 L Cr</td><td class="text-success"><i class="bi bi-arrow-up"></i> 10.4%</td></tr>
+            <tr><td>Excise Duty</td><td>₹3.20 L Cr</td><td>₹3.45 L Cr</td><td>₹3.80 L Cr</td><td class="text-success"><i class="bi bi-arrow-up"></i> 10.1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/animations.js"></script><script src="js/upgrade.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

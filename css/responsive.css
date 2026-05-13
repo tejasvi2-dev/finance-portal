@@ -1,0 +1,71 @@
+/* ============================================
+   Finance Department of India Portal
+   Responsive Styles
+   ============================================ */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 991.98px) {
+  .hero h1 { font-size: 2.4rem; }
+  .section { padding: 70px 0; }
+  .section-header h2 { font-size: 2rem; }
+  .page-header { padding: 140px 0 60px; }
+  .page-header h1 { font-size: 2rem; }
+  .contact-info-card { margin-top: 30px; }
+  .stat-card { margin-bottom: 20px; }
+}
+
+/* Tablets */
+@media (max-width: 767.98px) {
+  .hero { min-height: 100vh; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; text-align: center; }
+  .section { padding: 60px 0; }
+  .section-header { margin-bottom: 40px; }
+  .section-header h2 { font-size: 1.7rem; }
+  .page-header { padding: 120px 0 50px; }
+  .page-header h1 { font-size: 1.7rem; }
+  .stat-card { padding: 24px; }
+  .stat-card h3 { font-size: 1.6rem; }
+  .footer { padding: 50px 0 0; }
+  .footer .col-lg-3 { margin-bottom: 30px; }
+  .gallery-item { height: 200px; }
+  .analytics-card .amount { font-size: 1.3rem; }
+  .navbar-finance .navbar-brand { font-size: 0.95rem; }
+  .navbar-finance .navbar-brand img { height: 34px; }
+  .navbar-collapse {
+    background: rgba(10,22,40,0.98);
+    border-radius: 12px; padding: 20px;
+    margin-top: 12px;
+    backdrop-filter: blur(20px);
+  }
+  .about-img-wrap { margin-bottom: 30px; }
+  .about-img-wrap::after { display: none; }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .hero h1 { font-size: 1.65rem; }
+  .hero-badge { font-size: 0.75rem; padding: 6px 14px; }
+  .section { padding: 50px 0; }
+  .section-header h2 { font-size: 1.5rem; }
+  .stat-card { padding: 20px; }
+  .stat-card h3 { font-size: 1.4rem; }
+  .scheme-card { padding: 28px 20px; }
+  .service-card { padding: 24px 18px; }
+  .contact-info-card { padding: 28px; }
+  .page-header { padding: 110px 0 40px; }
+  .page-header h1 { font-size: 1.5rem; }
+  .footer-bottom { font-size: 0.8rem; }
+  .ticker-item { font-size: 0.8rem; }
+  #scrollTop { width: 42px; height: 42px; bottom: 20px; right: 20px; }
+  .gallery-item { height: 180px; }
+  .news-card-img { height: 160px; }
+}
+
+/* Extra small */
+@media (max-width: 375px) {
+  .hero h1 { font-size: 1.4rem; }
+  .section-header h2 { font-size: 1.3rem; }
+}
