@@ -31,7 +31,6 @@ A modern and responsive government finance web application developed using HTML5
 - News
 - Contact
 
-## 🌐 Live Demo
-Add your GitHub Pages link here
+
 
 
